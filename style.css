@@ -1,0 +1,276 @@
+/* Body */
+
+body {
+    background-color: black;
+}
+
+/* Backgroun Image */
+
+.bg-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.815), rgba(0, 0, 0, 0.6)), url(assets/IN-en-20250623-TRIFECTA-perspective_ae5833b7-6ce5-4e88-853e-014f38c506f1_large.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 90vh;
+}
+
+/* Logo Image */
+
+.netflix-logo {
+  width: 80px;
+  max-width: 100%;
+  height: auto;
+  color: rgb(229, 9, 20);
+  fill: currentColor;
+}
+
+@media screen and (min-width:756px) {
+.netflix-logo {
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+  color: rgb(229, 9, 20);
+  fill: currentColor;
+}
+}
+
+.logo-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* Language */
+
+.lang select {
+    background-color: transparent;
+    border: none;
+}
+
+select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+
+/* Backgroun Image */
+
+.sign-in a {
+    text-decoration: none;
+}
+
+.sign-in , .email-btn {
+    background-color: red;
+}
+
+.sign-in:hover {
+    background-color: rgb(219, 1, 1);
+}
+
+/* Hero Section */
+
+.hero-section {
+    height: 70vh;
+}
+
+.input1 {
+    background: none;
+    border: 1px solid rgb(131, 131, 131);
+}
+
+.input1::placeholder {
+    color: #999999;
+    /* Change to your desired color */
+}
+
+.input1:focus {
+    background: transparent;
+    /* Change to your desired color */
+}
+
+
+/* Font Size */
+
+@media (min-width: 1200px) {
+    .fs-1 {
+        font-size: 3.5rem !important;
+    }
+}
+
+.email-btn {
+    border: none;
+}
+
+.email-btn:hover {
+    background-color: rgb(219, 1, 1);
+}
+
+/* curve */
+
+.netflix-curve {
+    height: 18vh;
+    width: 100vw;
+    overflow: hidden;
+    margin-left: calc(-50vw + 50%);
+}
+
+.line {
+    height: 18vh;
+    border-top: 4px solid #ff0000cc;
+    border-top-left-radius: 120vw 100px;
+    border-top-right-radius: 120vw 100px;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+}
+
+/* Carousel */
+
+.carousel-inner {
+    padding: 1em;
+}
+
+.card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-item {
+    margin-right: 0;
+    flex: 0 0 20.333333%;
+    display: block;
+}
+
+.carousel-inner {
+    display: flex;
+}
+
+.card .img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: transparent;
+}
+
+.img-wrapper .fs-1 {
+    font-size: 6.5rem !important;
+}
+
+.img-wrapper span {
+    -webkit-text-stroke: 0.10rem rgb(255, 255, 255);
+    left: -1.3rem;
+}
+
+/* Make the whole card scale smoothly on hover */
+.carousel-item .card {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.carousel-item .card:hover {
+    transform: scale(1.05);
+    z-index: 10;
+    /* Bring forward if overlapping */
+}
+
+@media screen and (min-width: 767px) {
+    .box-card .card {
+        width: 300px;
+        height: 40vh;
+    }
+
+    .box-card .svg {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+.box-card .card {
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    position: relative;
+}
+
+.svg {
+    display: flex;
+    justify-content: end;
+}
+
+.box-card h3 {
+    font-weight: 800;
+}
+
+.box-card p {
+    color: rgb(180, 179, 179);
+    font-weight: 700;
+}
+
+.accordion-item {
+    background-color: rgb(45, 45, 45);
+    border: none;
+}
+
+.accordion-item button {
+    color: rgb(255, 255, 255);
+}
+
+.accordion-item:hover {
+    background-color: rgb(57, 57, 57);
+}
+
+.accordion-button::after {
+    filter: brightness(0) invert(1);
+    /* Makes the default arrow white */
+}
+
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.contact-num p, a {
+    color: #FFFFFFB3;
+}
+
+.footer-ul ul {
+    list-style: none;
+    /* Removes bullets */
+    padding: 0;
+    /* Removes default left padding */
+    margin: 0;
+    /* Optional: resets margin */
+    display: inline-block;
+    font-size: 0.90rem;
+}
+
+.footer-ul ul li {
+    margin-top: .80rem;
+}
+
+.f-text1 {
+    color: #FFFFFFB3;
+    font-size: 0.90rem;
+}
+
+.f-text2 {
+    color: #FFFFFF80;
+    font-size: 0.90rem;
+}
+
+.footer {
+    padding-bottom: 8rem;
+}
